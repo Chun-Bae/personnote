@@ -69,7 +69,7 @@ class ProfileCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AspectRatio(
-              aspectRatio: 4 / 5,
+              aspectRatio: 1 / 1,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8),
                 child: Image.asset(
@@ -79,13 +79,14 @@ class ProfileCard extends StatelessWidget {
               ),
             ),
             SizedBox(height: 8),
-            Text(
+            Expanded(
+                child: Text(
               name,
               style: TextStyle(
-                fontSize: 10,
+                fontSize: 12,
                 fontWeight: FontWeight.bold,
               ),
-            ),
+            )),
           ],
         ),
       ),
